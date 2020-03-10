@@ -1,6 +1,8 @@
 import Vue from "vue";
 import App from "./App.vue";
 import store from "./store";
+import "leaflet/dist/leaflet.css";
+import "./plugins/bootstrap-vue";
 
 Vue.config.productionTip = false;
 

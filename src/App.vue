@@ -1,28 +1,39 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-  </div>
+  <b-container>
+    <HomeView />
+  </b-container>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import HomeView from "./components/views/HomeView.vue";
 
 export default {
   name: "App",
   components: {
-    HelloWorld
+    HomeView
   }
 };
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.container {
+  height: 100vh;
+}
+
+.row {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.map-container {
+  height: 60%;
+}
+
+.view-class {
+  height: inherit;
+}
+
+.maps {
+  height: 100%;
 }
 </style>
